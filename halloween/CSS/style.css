@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-rows: 100px 1fr auto;
+    grid-template-areas:
+      "entrada entrada entrada"
+      "corredor sala laboratorio"
+      "porao porao porao";
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .area {
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    min-height: 100px;
+    border: 1px solid #fff;
+  }
+  
+  /* Define a qual área do grid cada DIV pertence */
+  .entrada {
+    grid-area: entrada;
+    background-color: #000000; /* preto */
+  }
+  
+  .corredor {
+    grid-area: corredor;
+    background-color: #4b0082; /* roxo */
+  }
+  
+  .sala {
+    grid-area: sala;
+    background-color: #2f4f4f; /* verde escuro */
+  }
+  
+  .laboratorio {
+    grid-area: laboratorio;
+    background-color: #333333; /* cinza */
+  }
+  
+  .porao {
+    grid-area: porao;
+    background-color: #111111;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin: 0;
+  }
+  
+  * {
+    outline: 5px solid red !important;
+  }
+  
